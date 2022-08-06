@@ -11,6 +11,7 @@ aside {
     margin: 15px 15px 0 0;
     color: #fdfdfd;
     font-size: 2rem;
+    transition: 0.5s;
 }
 .icon_menu ion-icon:hover {
     color: #00804b;
@@ -37,6 +38,7 @@ aside {
     font-size: 15px;
     width: 100%;
     font-family: sans-serif;
+    transition: 0.5s;
 }
 #barra_menu ul li a:hover{
     border: solid 1px #02d67d;
@@ -55,6 +57,7 @@ aside {
 }
 .C-icon span {
     color: #fbf7f7;
+    transition: 1s;
 }
 .C-icon span:hover {
     transition: 0.2s;
@@ -75,6 +78,7 @@ aside {
     margin: 15px 15px 0 0;
     color: #fdfdfd;
     font-size: 2rem;
+    transition: 0.5s;
 }
 .slide-up ion-icon:hover {
     color: #00804b;
@@ -92,11 +96,13 @@ aside {
   margin: 15px 0 0 15px;
   color: #fdfdfd;
   font-size: 2rem;
+  transition: 0.5s;
 }
 .slide-down ion-icon:hover {
   color: #00804b;
 }
 .slide-down a:hover {
   color: #00804b;
+
 }
 

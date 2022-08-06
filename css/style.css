@@ -13,6 +13,7 @@ border-radius: 30px;
 
 /*HEADER*/
 .home {
+    padding: 30px;
     display: flex;
     background-color: #212121;
     height: 100vh;
@@ -20,32 +21,11 @@ border-radius: 30px;
     min-height: 500px;
     font-family:sans-serif;
 }
-.home .max-width {
-    display: flex;
-    margin: auto auto;
-    align-items: center;
-    
-}
-.home .home-content .text-1 {
-    font-size: 27px;
-}
-.home .home-content .text-2 {
-    font-size: 75px;
-    font-weight: 500;
-    margin-left: -3px;
-}
-.home .home-content .text-3 {
-    font-size: 40px;
-    margin: 5px 0;
-}
+
 .home .home-content .text-3 span{
     color: #00804b
 }
 
-.imagem_autor img {
-    max-width: 600px;
-    align-self: center;
-}
 
 /*MAIN*/
 /*Sessão Sobre*/
@@ -54,13 +34,7 @@ border-radius: 30px;
     background: #212121;
     background-size: 50vh;
 }
-.about .about__content{
-    display:flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding-bottom: 50px;
-    margin:auto;
-}
+
 .title{
     font-size: 50px;
     font-weight: 500;
@@ -74,12 +48,11 @@ border-radius: 30px;
     max-width: 400px;
 }
 .about .about__content .left{
-    width: 40%;
+    width: 30%;
+    text-align: center;
+    margin: auto
 }
 
-.about .about__content .right{
-    width:50%;
-}
 .text, p{
     color: #fbf7f7;
     font-size: 1.3rem;
@@ -105,13 +78,13 @@ button a {
 .services .serv-content {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .services .serv-content .card {
-    width: calc(25% - 15px);
     background: #212121;
     text-align: center;
     border-radius: 6px;
-    padding:10px 15px;
+    padding:10px 0;
     cursor: pointer;
     margin: 2.5px;
     transition:all 0.3s ease;
@@ -190,8 +163,6 @@ button a {
     filter: none;
 }
 .academic .serv-content .card-acad {
-    width: calc(25% - 40px);
-    height: 400px;
     background: rgba(255, 255, 255, 0.1);
     filter: blur(3px);
     text-align: center;
@@ -231,24 +202,8 @@ button a {
     grid-template-columns: 24% 24% 24% 24%;
     grid-template-rows: 33.33% 33.33% 33.33%;
     grid-gap:15px;
-    height: 100vh;
+    height: calc(100vh - 50px);
 }
-.cards {
- display:flex;
- flex-wrap: wrap;
- align-items: flex-end;
- border-radius: 10px;
-}
-.cards:hover {
-    transform: rotate(0.01turn);
-    transition: all 0.8s;
-}
-.describe{
-    background: rgba(0, 0, 0, 0.8);
-    border-radius: 0 0 10px 10px;
-    width: 100%;
-    
-   }
 .port .container .cards:nth-child(1) {
     background: url(../img/DesafioFrexco.png);
     background-position: center;
@@ -262,7 +217,7 @@ button a {
     background-position: center;
     background-size: cover;
     grid-column: 4 / 4;
-    grid-row: 1 / 1;
+    grid-row: 1 / 2;
 }
 
 .port .container .cards:nth-child(3) {
@@ -297,6 +252,22 @@ button a {
     grid-row: 3 / 3;
 }
 
+.cards {
+ display:flex;
+ flex-wrap: wrap;
+ align-items: flex-end;
+ border-radius: 10px;
+}
+.cards:hover {
+    transform: rotate(0.01turn);
+    transition: all 0.8s;
+}
+.describe{
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+}
+
 /*sessão contato*/
 .contact{
     font-family: sans-serif;
@@ -309,6 +280,7 @@ button a {
     border-radius: 15px;
     margin:auto;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
