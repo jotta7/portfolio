@@ -30,7 +30,7 @@ window.sr = ScrollReveal({ reset: true})
 //text about
 ScrollReveal( {distance:'60px'}).reveal('.right', {
     delay: 500,
-    origin: 'right'
+    origin: 'left'
 })
 
 //skills
@@ -48,7 +48,9 @@ ScrollReveal().reveal('.card-circle', {
     }
 })
 //portfolio
+
 ScrollReveal().reveal('.cards', {
+    mobile: false,
     delay: 500,
     interval: 300
 })
