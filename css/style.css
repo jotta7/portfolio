@@ -1,0 +1,409 @@
+/*scroll*/
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-track {
+background: var(--backcolor-page);
+}
+::-webkit-scrollbar-thumb {
+background: var(--back-padrao);
+border: 3px solid rgba(0, 0, 0, 0.5);
+border-radius: 15px;
+}
+
+
+
+:root {
+    --backcolor-page: #212121;
+    --back-padrao: #cb6ce6;
+    --back-padrao2: #00804b;
+}
+
+
+/*HEADER*/
+.logo {
+    width: 100px;
+}
+
+.home {
+    padding: 30px;
+    display: flex;
+    background-color:  var(--backcolor-page);
+    height: 100vh;
+    color: #ffffff;
+    min-height: 500px;
+    font-family:sans-serif;
+}
+
+.home .home-content .text-3 span{
+    color: var(--back-padrao)
+}
+
+
+/*MAIN*/
+/*Sessão Sobre*/
+.about{
+    font-family: sans-serif;
+    background:  var(--backcolor-page);
+    background-size: 50vh;
+}
+
+.title{
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    position: relative;
+    color:var(--back-padrao);
+    text-align: center;
+    padding: 20px;
+}
+.colum img{
+    max-width: 400px;
+}
+.about .about__content .left{
+    width: 30%;
+    text-align: center;
+    margin: auto
+}
+
+.text, p{
+    color: #fbf7f7;
+    font-size: 1.3rem;
+}
+button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    /*background: linear-gradient(45deg, #cb6ce6, #5b25f1);*/
+    background: linear-gradient(45deg, #cb6ce6, #cb6ce6, 
+    #cb6ce6, #Bebfff, #5b25f1, #5b25f1);
+    border-radius: 10px 0 10px 0;
+    background-size: 200% 200%;
+    animation: shine 5s ease-in-out infinite;
+    transform-origin: center;
+}
+button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border: solid 2px var(--back-padrao);
+    box-shadow: 0 0 10px 2px#cb6ce6;
+    color:var(--back-padrao)
+}
+button a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/*sessão skills*/
+.services .serv-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.services .serv-content .card {
+    background:  var(--backcolor-page);
+    text-align: center;
+    border-radius: 6px;
+    padding:10px 0;
+    cursor: pointer;
+    margin: 2.5px;
+    transition:all 0.3s ease;
+}
+.services .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .box{
+    transform:scale(1.05)
+}
+.services .serv-content .card ion-icon{
+    color: var(--back-padrao);
+    font-size: 70px;
+}
+
+/*sessão hobbies*/
+.hobbies {
+    background: #fbf7f7;
+    color: --backcolor-page;
+    padding: 20px;
+    
+}
+.hobbies .serv-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.hobbies .serv-content .card-circle {
+    width: calc(15% - 50px);
+    background: --backcolor-page;
+    text-align: center;
+    border-radius: 50%;
+    padding:40px 15px;
+    cursor: pointer;
+    margin: 2.5px;
+    transition:all 0.3s ease;
+}
+.hobbies .serv-content .card-circle .box{
+    transition: all 0.3s ease;
+}
+.hobbies .serv-content .card-circle:hover .box{
+    transform:scale(1.05)
+}
+.hobbies .serv-content .card-circle ion-icon{
+    color: var(--back-padrao);
+    font-size: 70px;
+}
+
+/*sessão skills*/
+.services {
+    background: #fbf7f7;
+    color:  var(--backcolor-page);
+    padding: 20px;    
+}
+
+/*sessão academica*/
+.academic {
+    background-color: #212121;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Crect fill='none' stroke-width='3.2' id='a' x='-400' y='-300' width='800' height='600'/%3E%3C/defs%3E%3Cg transform='scale(0.847)' style='transform-origin:center'%3E%3Cg transform='rotate(28.8 0 0)' style='transform-origin:center'%3E%3Cg transform='rotate(-160 0 0)' style='transform-origin:center'%3E%3Cg transform='translate(1000 750)'%3E%3Cuse stroke='%235B25F1' href='%23a' transform='rotate(10 0 0) scale(1.1)'/%3E%3Cuse stroke='%23622af0' href='%23a' transform='rotate(20 0 0) scale(1.2)'/%3E%3Cuse stroke='%236a2ef0' href='%23a' transform='rotate(30 0 0) scale(1.3)'/%3E%3Cuse stroke='%237133ef' href='%23a' transform='rotate(40 0 0) scale(1.4)'/%3E%3Cuse stroke='%237938ee' href='%23a' transform='rotate(50 0 0) scale(1.5)'/%3E%3Cuse stroke='%23803ded' href='%23a' transform='rotate(60 0 0) scale(1.6)'/%3E%3Cuse stroke='%238841ed' href='%23a' transform='rotate(70 0 0) scale(1.7)'/%3E%3Cuse stroke='%238f46ec' href='%23a' transform='rotate(80 0 0) scale(1.8)'/%3E%3Cuse stroke='%23974beb' href='%23a' transform='rotate(90 0 0) scale(1.9)'/%3E%3Cuse stroke='%239e50ea' href='%23a' transform='rotate(100 0 0) scale(2)'/%3E%3Cuse stroke='%23a654ea' href='%23a' transform='rotate(110 0 0) scale(2.1)'/%3E%3Cuse stroke='%23ad59e9' href='%23a' transform='rotate(120 0 0) scale(2.2)'/%3E%3Cuse stroke='%23b55ee8' href='%23a' transform='rotate(130 0 0) scale(2.3)'/%3E%3Cuse stroke='%23bc63e7' href='%23a' transform='rotate(140 0 0) scale(2.4)'/%3E%3Cuse stroke='%23c467e7' href='%23a' transform='rotate(150 0 0) scale(2.5)'/%3E%3Cuse stroke='%23CB6CE6' href='%23a' transform='rotate(160 0 0) scale(2.6)'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 30px;
+}
+.academic .serv-content .card-acad img{
+    width: 100%;
+    border-radius: 6px 6px 0 0;   
+}
+.academic .serv-content {
+    display: block;
+    overflow-y: scroll;
+    height: 500px;
+    padding: 30px;
+}
+.academic .serv-content::-webkit-scrollbar-thumb {
+    display: none;
+}
+.academic .serv-content .card-acad:first-child {
+    filter: none;
+}
+.academic .serv-content .card-acad {
+    background: rgba(21,21,21,0.8);
+    filter: blur(3px);
+    text-align: center;
+    border-radius: 6px;
+    border: solid 2px var(--back-padrao);
+    cursor: pointer;
+    margin: 20px auto;
+    padding: 10px;
+    transition:all 0.3s ease;
+}
+
+.academic .serv-content .card-acad:hover {
+   transform: scale(1.2);
+   
+   filter:none;
+   box-shadow: 0 0 10px 2px#cb6ce6;
+   z-index: 2;
+}
+.academic .serv-content .card-acad .box{
+    transition: all 0.3s ease;
+}
+.academic .serv-content .card-acad:hover .box{
+    transform:scale(1.05)
+}
+.academic .serv-content .card-acad ion-icon{
+    color: var(--back-padrao);
+    font-size: 70px;
+}
+
+/*sessão portifólio*/
+
+.port {
+    background:  var(--backcolor-page);
+    padding: 30px;
+}
+.port .container {
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    grid-gap:15px;
+    height: calc(100vh - 50px);
+}
+.port .container .cards:nth-child(1) {
+    background: url(../img/DesafioFrexco.png);
+    background-position: center;
+    background-size: cover;
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+}
+
+.port .container .cards:nth-child(2) {
+    background: url(../img/previewDecod.png);
+    background-position: center;
+    background-size: cover;
+    grid-column: 4 / 4;
+    grid-row: 1 / 2;
+}
+
+.port .container .cards:nth-child(3) {
+    background: url(../img/jogodaforca.png);
+    background-position: center;
+    background-size: cover;
+    grid-column: 4 / 4;
+    grid-row: 2 / 3;
+}
+
+.port .container .cards:nth-child(4) {
+    background: url(../img/projeto-barbearia.png);
+    background-position: center;
+    background-size: cover;
+    grid-column: 4 / 4;
+    grid-row: 3 / 3;
+}
+
+.port .container .cards:nth-child(5) {
+    background:rgba(3, 76, 17, 0.535);
+    background-position: center;
+    background-size: cover;
+    grid-column: 3 / 4;
+    grid-row: 3 / 3;
+}
+
+.port .container .cards:nth-child(6) {
+    background: url(../img/responsivo.png);
+    background-position:top;
+    background-size: cover;
+    grid-column: 1 / 3;
+    grid-row: 3 / 3;
+}
+
+.cards {
+ display:flex;
+ flex-wrap: wrap;
+ align-items: flex-end;
+ border-radius: 20px 0 20px 0;
+}
+.cards:hover {
+    transform: rotate(0.01turn);
+    transition: all 0.8s;
+}
+.describe{
+    background: rgba(21,21,21,0.5);;
+    border-radius: 0 0 20px 20px;
+    width: 100%;
+}
+
+/*sessão contato*/
+.contact{
+    font-family: sans-serif;
+    background:  var(--backcolor-page);
+}
+.contact_box{
+    color: white;
+    background-color: none;
+    padding: 40px 20px;
+    border-radius: 15px;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.contact_box2 h1{
+    font-size: 2rem;
+    font-family: sans-serif;
+    text-align: center;
+    color: var(--back-padrao);
+}
+.contact_box2 img{
+    max-width: 300px;
+}
+
+fieldset{
+    border: 3px solid var(--back-padrao);
+    padding: 20px
+}
+legend{
+    border: 1px solid var(--back-padrao);
+    padding: 10px;
+    text-align: center;
+    background-color: var(--back-padrao);
+    border-radius: 8px;
+    
+}
+.inputbox{
+    position: relative;
+}
+.inputuser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px ;
+    width: 100% ;
+    letter-spacing: 2px;
+}
+.labelinput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: 3s;
+}
+.inputuser:focus~.labelinput,.inputuser:valid~.labelinput{
+    top: -20px;
+    font-size: 12px;
+    color: var(--back-padrao);
+}
+
+#submit{
+    margin-top: 30px;
+    width: 100%;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #cb6ce6, #cb6ce6, 
+    #cb6ce6, #Bebfff, #5b25f1, #5b25f1);
+    border-radius: 10px 0 10px 0;
+    background-size: 200% 200%;
+    animation: shine 5s ease-in-out infinite;
+    transform-origin: center;
+    
+}
+#submit:hover{
+    background: rgba(255, 255, 255, 0.1);
+    border: solid 2px var(--back-padrao);
+    box-shadow: 0 0 10px 2px#cb6ce6;
+    color:var(--back-padrao)
+}
+
+footer{
+    background: var(--back-padrao);
+    color: #fbf7f7;
+    align-items: center;
+    padding: 20px;
+}
+.footer_box{
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+.footer_box ion-icon {
+    font-size: 2rem;
+    color:#fbf7f7;
+    margin-right: 20px;
+}
+
+.right, .card, .card-circle, .cars {
+    visibility: hidden;
+}

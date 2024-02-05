@@ -1,0 +1,159 @@
+/*cellphones*/
+@media screen and (min-width: 0){
+    
+    .home .max-width {
+        display: block;
+        margin: 20vh auto;
+        
+    }
+    .home .home-content .text-1 {
+        font-size: 20px;
+    }
+    .home .home-content .text-2 {
+        font-size: 65px;
+        font-weight: 500;
+        margin-left: -3px;
+    }
+    .home .home-content .text-3 {
+        font-size: 30px;
+        margin: 5px 0;
+    }
+    
+    .imagem_autor img {
+        margin-top: 100px;
+        max-width: 300px;
+        align-self: center;
+        padding-bottom: 50px;
+        display: block;
+    }
+
+    .about{
+        background-size: 100vh;
+    }
+    .about .about__content{
+        display:block;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-bottom: 50px;
+        margin:auto;
+    }
+    .colum img{
+        display: none;
+    }
+    .about .about__content .right{
+        padding: 30px;
+        width:calc(80% - 30px);
+    }
+
+
+    .services .serv-content {
+       flex-direction: column;
+    }
+    .services .serv-content .card {
+        width: calc(100% - 15px);
+    }
+
+
+    .hobbies .serv-content .card-circle {
+        width: 30%;
+    }
+
+    .academic .serv-content .card-acad {
+        width: 80%;
+    }
+    .port .container {
+        display: flex;
+        flex-wrap: wrap;
+        height: 200vh;
+    }
+   
+}
+
+/*tablets*/
+@media screen and (min-width: 768px){
+    .imagem_autor img {
+        max-width: 400px;
+    }
+
+    .services .serv-content {
+        flex-direction: row;
+     }
+    .services .serv-content .card {
+        width: calc(50% - 15px);
+    }
+   
+}
+
+/*desktop*/
+@media screen and (min-width: 992px){
+    .home .max-width {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+    .home .home-content .text-1 {
+        font-size: 27px;
+    }
+    .home .home-content .text-2 {
+        font-size: 75px;
+        font-weight: 500;
+        margin-left: -3px;
+    }
+    .home .home-content .text-3 {
+        font-size: 40px;
+        margin: 5px 0;
+    }
+
+    .imagem_autor img {
+        max-width: 600px;
+        align-self: center;
+    }
+
+    .about .about__content{
+        display:flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-bottom: 50px;
+        margin:auto;
+    }
+
+    .title:first-child {
+        text-align: left;
+        padding: 0;
+    }
+    .colum img{
+        display: flex;
+    }
+    
+    .about .about__content .right{
+        width:50%;
+    }
+
+
+    .services .serv-content .card {
+        width: calc(30% - 15px);
+    }
+
+    .hobbies .serv-content .card-circle {
+        width: calc(15% - 50px);
+    }
+
+    .academic .serv-content .card-acad {
+        width: calc(25% - 40px);
+        height: 400px;
+        margin: 20px auto;
+        padding: 10px;
+        transition:all 0.3s ease;
+    }
+
+    .port .container {
+        display: grid;
+        grid-template-columns: 24% 24% 24% 24%;
+        grid-template-rows: 33.33% 33.33% 33.33%;
+        grid-gap:15px;
+        height: calc(100vh - 50px);
+    }
+    
+
+
+}

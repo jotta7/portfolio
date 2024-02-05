@@ -1,0 +1,117 @@
+:root {
+    --backcolor-page: #212121;
+    --back-padrao: #cb6ce6;
+    --back-padrao2: #00804b;
+}
+
+aside {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.icon_menu ion-icon{
+    margin: 15px 15px 0 0;
+    color: #fdfdfd;
+    font-size: 2rem;
+    transition: 0.5s;
+}
+.icon_menu ion-icon:hover {
+    color: var(--back-padrao);
+}
+#close {
+    display: none;
+}
+
+#barra_menu {
+    box-shadow: 0 0 10px 2px#cb6ce6;
+    background: rgba(21,21,21,0.5);
+    height: 100vh;
+    width: 0px;
+    transition: 0.3s all;
+    border-radius: 20px 0 20px 0;
+    border: solid 1px var(--back-padrao);
+}
+
+#barra_menu ul li{
+    list-style: none;
+    padding: 25px;
+}
+
+#barra_menu ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    width: 100%;
+    font-family: sans-serif;
+    transition: 0.5s;
+}
+#barra_menu ul li a:hover{
+    border: solid 1px #fff;
+    padding: 8px;
+    border-radius: 10px 0 10px 0;
+    background: linear-gradient(45deg, #cb6ce6, #5b25f1);
+}
+
+.C-icon {
+    margin-top: 100% ;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+    overflow: hidden;
+}
+.C-icon span {
+    color: #fbf7f7;
+    transition: 1s;
+}
+.C-icon span:hover {
+    transition: 0.2s;
+    transform: 0.5s;
+    color: var(--back-padrao);
+}
+.C-icon span ion-icon{
+    font-size: 2rem;
+}
+
+.slide-up{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+.slide-up ion-icon{
+    margin: 15px 15px 0 0;
+    color: #fdfdfd;
+    font-size: 2rem;
+    transition: 0.5s;
+}
+.slide-up ion-icon:hover {
+    color: var(--back-padrao);
+}
+.slide-down{
+  position: fixed;
+  z-index: 7;
+}
+.slide-down a {
+  color: #fdfdfd;
+  font-size: 2rem;
+  text-decoration: none;
+}
+.slide-down ion-icon{
+  margin: 15px 0 0 15px;
+  color: #fdfdfd;
+  font-size: 2rem;
+  transition: 0.5s;
+}
+.slide-down ion-icon:hover {
+  color: var(--back-padrao);
+}
+.slide-down a:hover {
+  color: var(--back-padrao);
+
+}
+
